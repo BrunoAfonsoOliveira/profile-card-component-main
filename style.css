@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
 
+:root {
+    --Very-dark-desaturated-blue: #2D3248;
+    --Dark-grayish-blue: #6A6F81;
+    --Dark-gray: #969696;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -20,12 +26,12 @@ body {
     flex-direction: column;
     align-items: center;
     box-shadow: 0px 2px 40px 0 rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
+    border-radius: 10px;
     max-width: 85%;
 }
 
 .card-bg-img {
-    border-radius: 15px 15px 0 0;
+    border-radius: 10px 10px 0 0;
     max-width: 100%;
     display: block;
 }
@@ -33,10 +39,38 @@ body {
 .person-icon {
     border-radius: 50%;
     border: 6px solid #ffffff;
+    max-width: 40%;
+    display: block;
+    transform: translateY(-3rem);
+}
+
+.person-name-age {
+    display: flex;
+    gap: 10px;
+    font-weight: bold;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.age {
+    font-weight: normal;
+    color: var(--Dark-grayish-blue);
+}
+
+.location {
+    margin: 1rem 0 2rem 0;
+    color: var(--Dark-grayish-blue);
 }
 
 .divider {
     width: 100%;
+    color: var(--Dark-gray);
+    height: 1px;
+    background-color: var(--Dark-gray);
+    border: none;
+}
+
+.card-status {
+    padding: 1.5rem 0;
 }
 
 .card-status {
@@ -46,6 +80,15 @@ body {
 }
 .card-status > * {
     text-align: center;
+    color: var(--Dark-gray);
+    font-size: .9rem;
+}
+
+.status-header {
+    color: var(--Very-dark-desaturated-blue);
+    font-weight: bold;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
 }
 
 .attribution { 
