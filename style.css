@@ -19,6 +19,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-size: 50rem;
+    background-image: linear-gradient(#a1c4fd 0%, #c2e9fb 100%);
 }
 
 .card {
@@ -27,12 +29,14 @@ body {
     align-items: center;
     box-shadow: 0px 2px 40px 0 rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+    width: 400px;
     max-width: 85%;
+    background-color: #fff;
 }
 
 .card-bg-img {
     border-radius: 10px 10px 0 0;
-    max-width: 100%;
+    width: 100%;
     display: block;
 }
 
@@ -45,6 +49,7 @@ body {
 }
 
 .person-name-age {
+    font-size: 18px;
     display: flex;
     gap: 10px;
     font-weight: bold;
@@ -75,7 +80,8 @@ body {
 
 .card-status {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 2rem 3.5rem;
     width: 100%;
 }
 .card-status > * {
@@ -96,4 +102,25 @@ body {
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 400px) {
+    .card-status {
+        padding: 1rem 2rem;
+    }
+
+    .status-header {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .card-status {
+        padding: 1rem 1rem;
+        flex-wrap: wrap;
+    }
+
+    .status-header {
+        font-size: 1rem;
+    }
 }
