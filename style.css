@@ -99,9 +99,11 @@ body {
 
 .attribution { 
     font-size: 11px; text-align: center; 
+    font-size: .9rem;
+    margin-top: 20px;
 }
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: hsl(228, 45%, 44%);
 }
 
 @media (max-width: 400px) {
